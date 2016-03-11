@@ -3,33 +3,35 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link rel="stylesheet" href="./theme/css/main.css">
     <title>Arthur Vincent Simon</title>
     {% block head %}{% endblock %}
 </head>
 <body>
-    <div>
-        <header class="teal">
-            <nav>
+    <header class="teal">
+        <nav>
+            <div class="container">
                 <div class="nav-wrapper">
                     <a href="#" class="brand-logo">Arthur Vincent Simon</a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li class="active"><a href="{{ SITEURL }}/about.html">About</a></li>
                         <li><a href="#">Projects</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="{{ SITEURL }}/blog.html">Blog</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-            </nav>
-        </header>
-        <main>
-            {% block main %}{% endblock %}
-        </main>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+            </div>
+        </nav>
+    </header>
+    <main>
+        {% block main %}{% endblock %}
+    </main>
     <footer class="page-footer">
         <div class="footer-copyright">
             @ 2016 Copyright Text
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 </body>
 </html>
