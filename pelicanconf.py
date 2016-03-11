@@ -44,4 +44,11 @@ TEMPLATE_PAGES = {
 
 THEME = './themes/arvinsim'
 
+EXPERIENCE_HISTORY = [
+    {
+        'job_title': u'Frontend Web Developer',
+        'company_name': u'Innovuze Solutions Inc.',
+        'tool_tags': ['reactjs', 'redux', 'python', 'django', 'javascript', 'html', 'css']
+    }
+]
 
