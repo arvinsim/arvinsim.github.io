@@ -32,25 +32,23 @@
 
     <ul class="collection with-header">
         <li class="collection-header"><h2>Academic Attainment</h2></li>
+        {% for item in ACADEMIC_ATTAINMENT %}
         <li class="collection-item">
             <div class="row">
                 <div class="col s12 m4">
-                    <h3>B.S. Computer Science</h3>
+                    <h3>{{ item.school }}</h3>
                 </div>
                 <div class="col s12 m4">
-                    <h4>Xavier University</h4>
+                    <h4>{{ item.degree }}</h4>
                 </div>
                 <div class="col s12 m4">
-                    <div class="chip">Java</div>
-                    <div class="chip">Python</div>
-                    <div class="chip">PHP</div>
-                    <div class="chip">Ruby</div>
-                    <div class="chip">HTML</div>
-                    <div class="chip">CSS</div>
-                    <div class="chip">Javascript</div>
+                    {% for tool in item.tags.tools %}
+                        <div class="chip">{{ tool }}</div>
+                    {% endfor %}
                 </div>
             </div>
         </li>
+        {% endfor %}
     </ul>
 </div>
 {% endblock %}

@@ -44,11 +44,33 @@ TEMPLATE_PAGES = {
 
 THEME = './themes/arvinsim'
 
+# Data
 EXPERIENCE_HISTORY = [
     {
         'job_title': u'Frontend Web Developer',
         'company_name': u'Innovuze Solutions Inc.',
-        'tool_tags': ['reactjs', 'redux', 'python', 'django', 'javascript', 'html', 'css']
+        'tool_tags': ['reactjs', 'redux', 'python', 'django', 'javascript', 'html', 'css', 'git']
+    },
+    {
+        'job_title': u'Freelance Web Developer',
+        'company_name': u'',
+        'tool_tags': ['php', 'svn', 'html', 'css', 'javascrpt', 'jquery', 'mysql', 'codeigniter', 'knockout.js',
+                      'expressionengine', 'twitter-bootstrap']
+    },
+    {
+        'job_title': u'Junior Web Developer',
+        'company_name': u'Global Digital Services Inc.',
+        'tool_tags': ['html', 'css', 'javasacript', 'mootools', 'php', 'mysql', 'svn', 'joomla']
+    }
+]
+
+ACADEMIC_ATTAINMENT = [
+    {
+        'degree': 'B.S. Computer',
+        'school': 'Xavier University',
+        'tags': {
+            'tools': ['Java', 'Python', 'PHP', 'Ruby', 'HTML', 'CSS', 'Javascript']
+        }
     }
 ]
 
