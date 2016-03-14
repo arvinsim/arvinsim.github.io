@@ -2,23 +2,77 @@
 
 {% block main %}
 <div class="container">
-    <img class="center responsive-img materialboxed" src="http://loremflickr.com/600/240" alt="">
+    <!--<img class="center responsive-img materialboxed" src="http://loremflickr.com/600/240" alt="">-->
     <h1 class="center">Hi! I am Arthur Vincent Simon.</h1>
     <p class="flow-text">I am a Generalist Web Developer who focuses on the frontend side of Web Development.</p>
     <p class="flow-text">Over the past 8 years, I have worked on projects for companies such as Global Digital Services and <a href="http://www.innovuze.com/">Innovuze Solutions Inc</a>. I also did some freelance work with clients with New Zealand.</p>
     <p class="flow-text">When I started computer programming in college, I did not have any expectations for the field. I started from the ground up, creating my firest program in the terminal. I then moved on to create website solutions. For a brief stint in college, we were expected to learn Matlab by ourselves. But interest in website creation is what stuck with me. I was lucky that it coincided with the rise of the internet to the mainstream.</p>
     <p class="flow-text">Since then, I have been continually honing my skills in creating websites. This includes trying to architecture solutions with good documentation, optimize static assets,creating painless deployment and creating clean and minimalistic interfaces.</p>
 
+
+    <h2>Skills</h2>
+    <p>Frontend Tools: I started with Mootools. I then switched to jQuery during my freelancing stint. Right now, I am using
+        jQuery, Underscore/Lodash, React and Redux</p>
+    <p>Experience in Python:I have been using Python for some projects in my free time, at school and recently a rewrite from Java to Django</p>
+    <p>PHP Experience: I have many years experience maintaining PHP Sites.</p>
+    <p>Build Tools: Webpack</p>
+    <p>Collaboration Tools: JIRA, Scrum</p>
+    <p>Version Control: Git</p>
+
+    <table class="responsive-table">
+        <thead>
+            <tr>
+                <th>Major skills(everyday usage)</th>
+                <th>Minor skills(past experience)</th>
+                <th>Worked with</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div>
+                        <div>
+                            <p>
+                                <strong>Javascript(ES5 and ES2015)</strong> - jQuery, React, Redux, Lodash, Underscore
+                            </p>
+                        </div>
+
+                        <p>
+                            <strong>Python</strong> - Django, Django Rest Framework
+                        </p>
+
+                        <strong>HTML5</strong>
+                    </div>
+                </td>
+                <td>
+                    <p>
+                        <strong>PHP</strong> - Laravel, ExpressionEngine, Codeigniter
+                    </p>
+
+                    <strong>MySQL</strong>
+
+                    <p>
+                        <strong>CSS3</strong> - BootStrap, SASS, LESS
+                    </p>
+                </td>
+                <td>
+                    <strong>Java</strong>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
     <ul class="collection with-header">
-        <li class="collection-header"><h2>Experience</h2></li>
+        <li class="collection-header"><h4>Experience</h4></li>
         {% for item in EXPERIENCE_HISTORY %}
             <li class="collection-item">
                 <div class="row">
                     <div class="col s12 m4">
-                        <h3>{{ item.job_title }}</h3>
+                        <h5>{{ item.job_title }}</h5>
                     </div>
                     <div class="col s12 m4">
-                        <h4>{{ item.company_name }}</h4>
+                        <h6>{{ item.company_name }}</h6>
                     </div>
                     <div class="col s12 m4">
                         {% for tool_tag in item.tool_tags %}
@@ -31,15 +85,15 @@
     </ul>
 
     <ul class="collection with-header">
-        <li class="collection-header"><h2>Academic Attainment</h2></li>
+        <li class="collection-header"><h4>Academic Attainment</h4></li>
         {% for item in ACADEMIC_ATTAINMENT %}
         <li class="collection-item">
             <div class="row">
                 <div class="col s12 m4">
-                    <h3>{{ item.school }}</h3>
+                    <h5>{{ item.school }}</h5>
                 </div>
                 <div class="col s12 m4">
-                    <h4>{{ item.degree }}</h4>
+                    <h6>{{ item.degree }}</h6>
                 </div>
                 <div class="col s12 m4">
                     {% for tool in item.tags.tools %}
