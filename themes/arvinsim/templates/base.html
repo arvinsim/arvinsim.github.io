@@ -2,6 +2,7 @@
 <html lang="{{ DEFAULT_LANG }}">
 <head>
     <meta charset="utf-8">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
     <link rel="stylesheet" href="./theme/css/main.css">
     <title>Arthur Vincent Simon</title>
@@ -12,12 +13,20 @@
         <nav>
             <div class="container">
                 <div class="nav-wrapper">
-                    <a href="#" class="brand-logo">Arthur Vincent Simon</a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="{{ SITEURL }}/">About</a></li>
-                        <li><a href="{{ SITEURL }}/projects.html">Projects</a></li>
-                        <li><a href="{{ SITEURL }}/contact.html">Contact</a></li>
-                    </ul>
+                    <div class="col s12">
+                        <a href="#!" class="brand-logo">Arthur Vincent Simon</a>
+                        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="{{ SITEURL }}/">About</a></li>
+                            <li><a href="{{ SITEURL }}/projects.html">Projects</a></li>
+                            <li><a href="{{ SITEURL }}/contact.html">Contact</a></li>
+                        </ul>
+                        <ul id="mobile-demo" class="side-nav">
+                            <li><a href="{{ SITEURL }}/">About</a></li>
+                            <li><a href="{{ SITEURL }}/projects.html">Projects</a></li>
+                            <li><a href="{{ SITEURL }}/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -35,6 +44,7 @@
     {% block scripts %}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+        <script src="./theme/js/main.js"></script>
     {% endblock %}
 </body>
 </html>

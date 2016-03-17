@@ -12,3 +12,11 @@ img.center {
     display: block;
     margin: 0 auto;
 }
+
+.chip {
+    margin: 2px 0;
+}
+
+.academic-attainment {
+    font-size: 1.5rem;
+}
