@@ -30,54 +30,43 @@
             <a href="https://www.sourcetreeapp.com/">SourceTree</a></p>
     </div>
 
-    <table class="responsive-table">
-        <thead>
-            <tr>
-                <th>Major skills(everyday usage)</th>
-                <th>Minor skills(past experience)</th>
-                <th>Worked with/touched upon</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <div>
-                        <div>
-                            <p>
-                                <strong>Javascript(ES5 and ES2015)</strong> - jQuery, React, Redux, Lodash, Underscore
-                            </p>
-                        </div>
+    <div class="section">
+        <h5>Major Skills(used on a daily basis)</h5>
+        <div>
+            <p>
+                <strong>Javascript(ES5 and ES2015)</strong> - jQuery, React, Redux, Lodash, Underscore
+            </p>
+        </div>
 
-                        <p>
-                            <strong>Python</strong> - Django, Django Rest Framework
-                        </p>
+        <p>
+            <strong>Python</strong> - Django, Django Rest Framework
+        </p>
 
-                        <strong>HTML5</strong>
-                    </div>
-                </td>
-                <td>
-                    <p>
-                        <strong>PHP</strong> - Laravel, ExpressionEngine, Codeigniter
-                    </p>
+        <strong>HTML5</strong>
+    </div>
+    <div class="section">
+        <h5>Minor Skills(used in the past)</h5>
+        <p>
+            <strong>PHP</strong> - Laravel, ExpressionEngine, Codeigniter
+        </p>
 
-                    <strong>MySQL</strong>
+        <strong>MySQL</strong>
 
-                    <p>
-                        <strong>CSS3</strong> - BootStrap, SASS, LESS
-                    </p>
-                </td>
-                <td>
-                    <p>
-                        <strong>Java</strong>
-                    </p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+        <p>
+            <strong>CSS3</strong> - BootStrap, SASS, LESS
+        </p>
+    </div>
+    <div class="section">
+        <h5>Worked with or touched upon</h5>
+        <p>
+            <strong>Java</strong>
+        </p>
+    </div>
 
     <h4>Experience</h4>
     <div class="divider"></div>
-    {% for item in EXPERIENCE_HISTORY %}
+    <div class="experience-history">
+        {% for item in EXPERIENCE_HISTORY %}
             <div class="row">
                 <div class="col s12 m12 l4">
                     <h5>{{ item.job_title }}</h5>
@@ -87,29 +76,32 @@
                 </div>
                 <div class="col s12 m12 l4">
                     {% for tool_tag in item.tool_tags %}
-                        <div class="chip">{{ tool_tag }}</div>
+                    <div class="chip">{{ tool_tag }}</div>
                     {% endfor %}
                 </div>
             </div>
-    {% endfor %}
+        {% endfor %}
+    </div>
 
     <h4>Academic Attainment</h4>
     <div class="divider"></div>
-    {% for item in ACADEMIC_ATTAINMENT %}
-        <div class="row academic-attainment">
-            <div class="col s12 m12 l4">
-                <h5>{{ item.school }}</h5>
-            </div>
-            <div class="col s12 m12 l4">
-                <h6>{{ item.degree }}</h6>
-            </div>
-            <div class="col s12 m12 l4">
-                {% for tool in item.tags.tools %}
+    <div class="academic-attainment">
+        {% for item in ACADEMIC_ATTAINMENT %}
+            <div class="row">
+                <div class="col s12 m12 l4">
+                    <h5>{{ item.school }}</h5>
+                </div>
+                <div class="col s12 m12 l4">
+                    <h6>{{ item.degree }}</h6>
+                </div>
+                <div class="col s12 m12 l4">
+                    {% for tool in item.tags.tools %}
                     <div class="chip">{{ tool }}</div>
-                {% endfor %}
+                    {% endfor %}
+                </div>
             </div>
-        </div>
-    {% endfor %}
+        {% endfor %}
+    </div>
 </div>
 {% endblock %}
 
