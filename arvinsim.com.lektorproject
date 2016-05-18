@@ -1,2 +1,5 @@
 [project]
 name = Arvinsim.com
+
+[servers.ghpages]
+target = ghpages+https://arvinsim/arvinsim.github.io
