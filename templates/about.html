@@ -66,18 +66,20 @@
     <h4>Experience</h4>
     <div class="divider"></div>
     <div class="experience-history">
-        {% for item in EXPERIENCE_HISTORY %}
+        {% for experience_history in bag("about.experience_history") %}
             <div class="row">
-                <div class="col s12 m12 l4">
-                    <h5>{{ item.job_title }}</h5>
+                <div class="col s12 m12 l3">
+                    <h5>{{ experience_history.position }}</h5>
                 </div>
-                <div class="col s12 m12 l4">
-                    <h6>{{ item.company_name }}</h6>
-                </div>
-                <div class="col s12 m12 l4">
-                    {% for tool_tag in item.tool_tags %}
-                    <div class="chip">{{ tool_tag }}</div>
+                <div class="col s12 m12 l5">
+                    <h6>{{ experience_history.name }}</h6>
+                    <h6>{{ experience_history.dates.start }} - {{ experience_history.dates.end }}</h6>
+                    {% for technology in experience_history.key_technologies %}
+                        <div class="chip">{{ technology }}</div>
                     {% endfor %}
+                </div>
+                <div class="col s12 m12 l4">
+                    <h6>{{ experience_history.job_description }}</h6>
                 </div>
             </div>
         {% endfor %}
@@ -86,18 +88,17 @@
     <h4>Academic Attainment</h4>
     <div class="divider"></div>
     <div class="academic-attainment">
-        {% for item in ACADEMIC_ATTAINMENT %}
+        {% for academic_attainment in bag("about.academic_attainment") %}
             <div class="row">
                 <div class="col s12 m12 l4">
-                    <h5>{{ item.school }}</h5>
+                    <h5>{{ academic_attainment.school }}</h5>
                 </div>
                 <div class="col s12 m12 l4">
-                    <h6>{{ item.degree }}</h6>
+                    <h6>{{ academic_attainment.course }}</h6>
+                    <h6>{{ academic_attainment.dates.start }} - {{ academic_attainment.dates.end }}</h6>
                 </div>
                 <div class="col s12 m12 l4">
-                    {% for tool in item.tags.tools %}
-                    <div class="chip">{{ tool }}</div>
-                    {% endfor %}
+                    <h6>{{ academic_attainment.description }}</h6>
                 </div>
             </div>
         {% endfor %}

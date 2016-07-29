@@ -1,0 +1,46 @@
+{
+  "experience_history": [
+    {
+      "name": "Innovuze Solutions Inc.",
+      "position": "Frontend Web Developer",
+      "dates": {
+        "start": "August 2014",
+        "end": "PRESENT"
+      },
+      "job_description": "In charge of maintaining the core schematic editing feature of engineering oriented websites. In charge of analytics data presentation in the frontend of some websites. Pioneered unit testing and component based programming in the frontend.",
+      "key_technologies": ["HTML", "CSS", "Javascript", "Python"],
+      "notable_frameworks": ["jQuery", "MxGraph", "React", "Redux", "Bootstrap", "Django"]
+    },
+    {
+      "name": "Freelance Web Developer",
+      "position": "Full Stack Web Developer",
+      "dates": {
+        "start": "June 2010",
+        "end": "July 2014"
+      },
+      "job_description": "Worked as a contractor for a client in New Zealand for creating various websites. Websites include price scrapers, fuel vouchers, hardware stores, gyms and genomic data warehousing.",
+      "key_technologies": ["HTML", "CSS", "Javascript", "PHP", "MySQL"],
+      "notable_frameworks": ["jQuery", "KnockoutJS", "CodeIgniter", "ExpressionEngine", "Bootstrap"]
+    },
+    {
+      "name": "Global Digital Services",
+      "position": "Junior Web Developer",
+      "dates": {
+        "start": "June 2008",
+        "end": "June 2010"
+      },
+      "job_description": "Successfully maintained entertainment and health websites based on Canada. Also in charge of the basic administration of the local Linux server.",
+      "key_technologies": ["HTML", "CSS", "Javascript", "PHP", "MySQL"],
+      "notable_frameworks": ["Mootools", "Joomla CMS"]
+    }
+  ],
+  "academic_attainment": [{
+    "school": "Xavier University",
+    "course": "B.S. in Computer Science",
+    "dates": {
+      "start": "June 2002",
+      "end": "March 2008"
+    },
+    "description": "Studied Computer Science at school. Covered academic topics such as Data Structures and Algorithms and practical industry topics such Web Development, Project Management and Software Engineering."
+  }]
+}
