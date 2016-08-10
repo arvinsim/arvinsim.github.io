@@ -1,18 +1,32 @@
 {% extends "base.html" %}
 {% from "macros/pagination.html" import render_pagination %}
 {% block main %}
-    <h1>My Blog</h1>
+    <div class="container page">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <h1>You can find my blog entries on these sites</h1>
+            </div>
+        </div>
+        <div class="row blogs">
+            <div class="s12 m12 l12 center-align">
+                <a href="http://developarvin.blogspot.com/" target="_blank"><i class="fa fa-google fa-4" aria-hidden="true "></i></a>
+                <p class="caption">Blogger</p>
+            </div>
+        </div>
+    </div>
 
-    <ul class="blog-index">
-        {% for post in this.pagination.items %}
-            <li>
-            <a href="{{ post|url }}">{{ post.title }}</a> —
-            by {{ post.author }}
-            on {{ post.pub_date }}
-        {% endfor %}
-    </ul>
-
-    {% if this.pagination.pages > 1 %}
-        {{ render_pagination(this.pagination) }}
-    {% endif %}
+{#    <h1>My Blog</h1>#}
+{##}
+{#    <ul class="blog-index">#}
+{#        {% for post in this.pagination.items %}#}
+{#            <li>#}
+{#            <a href="{{ post|url }}">{{ post.title }}</a> —#}
+{#            by {{ post.author }}#}
+{#            on {{ post.pub_date }}#}
+{#        {% endfor %}#}
+{#    </ul>#}
+{##}
+{#    {% if this.pagination.pages > 1 %}#}
+{#        {{ render_pagination(this.pagination) }}#}
+{#    {% endif %}#}
 {% endblock %}

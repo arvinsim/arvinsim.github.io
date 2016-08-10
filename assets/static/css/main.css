@@ -4,6 +4,10 @@ body {
     flex-direction: column;
 }
 
+body a {
+    color: #EE6E73;
+}
+
 main {
     flex: 1 0 auto;
 }
@@ -19,20 +23,19 @@ img.center {
 
 
 .fa.fa-4 {
-    /*color: black;*/
-    color: #ee6e73;
+    color: #EE6E73;
     font-size: 7em;
 }
 
-.contact-page {
+.page {
    margin-top: 100px;
 }
 
-.contact-page h1 {
+.page h1 {
     text-align: center;
 }
 
-.contacts {
+.contacts, .blogs {
     padding: 100px 0;
 }
 
