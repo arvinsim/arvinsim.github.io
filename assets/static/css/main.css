@@ -19,11 +19,25 @@ img.center {
 
 
 .fa.fa-4 {
-    color: black;
+    /*color: black;*/
+    color: #ee6e73;
     font-size: 7em;
 }
 
-.contacts {
+.contact-page {
    margin-top: 100px;
 }
+
+.contact-page h1 {
+    text-align: center;
+}
+
+.contacts {
+    padding: 100px 0;
+}
+
+.contacts .contact .caption {
+    font-size: 2em;
+}
+
 
