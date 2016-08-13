@@ -1,11 +1,18 @@
+$primary-color: #EE6E73;
+
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-}
 
-body a {
-  color: #EE6E73;
+  a {
+    color: $primary-color;
+  }
+
+  .fa.fa-4 {
+    color: $primary-color;
+    font-size: 7em;
+  }
 }
 
 main {
@@ -21,18 +28,12 @@ img.center {
   margin: 2px 0;
 }
 
-
-.fa.fa-4 {
-  color: #EE6E73;
-  font-size: 7em;
-}
-
 .page {
   margin-top: 100px;
-}
 
-.page h1 {
-  text-align: center;
+  h1 {
+    text-align: center;
+  }
 }
 
 .contacts, .blogs {
@@ -41,5 +42,10 @@ img.center {
 
 .contacts .contact .caption {
   font-size: 2em;
+}
+
+footer.page-footer .footer-copyright {
+  background: none;
+  text-align: center;
 }
 
