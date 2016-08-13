@@ -3,3 +3,6 @@ name = Arvinsim.com
 
 [servers.ghpages]
 target = ghpages+https://arvinsim/arvinsim.github.io
+
+[packages]
+lektor-webpack-support = 0.1

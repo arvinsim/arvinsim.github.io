@@ -5,3 +5,6 @@
 *.swp
 
 output/
+
+node_modules/
+assets/static/gen/
