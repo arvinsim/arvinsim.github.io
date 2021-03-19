@@ -2,7 +2,7 @@ backports.shutil-get-terminal-size==1.0.0
 blinker==1.4
 docutils==0.12
 feedgenerator==1.7
-Jinja2==2.8
+Jinja2==2.11.3
 MarkupSafe==0.23
 path.py==7.5
 pathlib==1.0.1
